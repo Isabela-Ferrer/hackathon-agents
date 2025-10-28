@@ -1,0 +1,16 @@
+{
+  "name": "AI agent",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  
+  "postCreateCommand":  "apt-get update && apt-get install -y libopenmpi-dev openmpi-bin openmpi-common && pip install dedalus-labs debugpy requests python-dotenv",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-python.debugpy"
+      ]
+    }
+  }
+}
